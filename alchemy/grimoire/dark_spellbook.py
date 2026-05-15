@@ -1,9 +1,9 @@
-from light__validator import validate_ingredients
+from dark__validator import validate_ingredients
 
-def light_spell_allowed_ingredients():
+def dark_spell_allowed_ingredients():
     return "Allowed earth, air, fire, water"
 
-def light_spell_record(spell_name: str, ingredients: str):
+def dark_spell_record(spell_name: str, ingredients: str):
     if validate_ingredients(ingredients) == "VALID":
         return ("Spell recorded")
     else:
